@@ -8,9 +8,12 @@ body{
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
+	min-width: 100VW;
 	background-color: hsl(0, 0%, 95%);
 	font-family: 'Lexend Deca', sans-serif;
-	Font size: 15px
+	Font-size: 15px;
+	padding: 0;
+	margin: 0;
 }
 
 .main-container{
@@ -40,7 +43,7 @@ body{
 
 
 
-.sedan-container > h2{
+.sedan-container > h1{
 	font-size: 32px;
 	color: hsl(0, 0%, 95%);
 	font-family: 'Big Shoulders Display', cursive;
@@ -55,6 +58,7 @@ body{
 	font-size: 15px;
 	margin: 5vh 0 3vh 0;
 	border: solid hsl(31, 77%, 52%);
+	cursor: pointer;
 }
 
 .sedan-container > button:hover{
@@ -82,7 +86,7 @@ body{
 	margin: 1vh 1vw;
 }
 
-.suvs-container > h2 {
+.suvs-container > h1 {
 	font-size: 32px;
 	color: hsl(0, 0%, 95%);
 	font-family: 'Big Shoulders Display', cursive;
@@ -98,6 +102,7 @@ body{
 	font-size: 15px;
 	margin: 5vh 0 3vh 0;
 	border: solid hsl(184, 100%, 22%);
+	cursor: pointer;
 }
 
 .suvs-container > button:hover{
@@ -124,7 +129,7 @@ body{
 	margin: 1vh 1vw;
 }
 
-.luxury-container > h2{
+.luxury-container > h1{
 	font-size: 32px;
 	color: hsl(0, 0%, 95%);
 	font-family: 'Big Shoulders Display', cursive;
@@ -134,6 +139,7 @@ body{
 	color: hsl(179, 100%, 13%);
 	background-color: white;
 	border-radius: 25px;
+	cursor: pointer;
 	width: 75%;
 	padding: 2vh 0.5vw 2vh 0.5vw;
 	font-size: 15px;
