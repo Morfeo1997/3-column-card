@@ -2,6 +2,15 @@
 	box-sizing: border-box;
 }
 
+:root{
+	--Bright-orange: hsl(31, 77%, 52%);
+	--Dark-cyan: hsl(184, 100%, 22%);
+	--Very-dark-cyan: hsl(179, 100%, 13%);
+	--Transparent-white: hsla(0, 0%, 100%, 0.75);
+	--Very-light-gray: hsl(0, 0%, 95%);
+	font-size: 15px;
+}
+
 body{
 	display: flex;
 	flex-direction: column;
@@ -22,46 +31,46 @@ body{
 	width: 70%;
 	flex-direction: row;
 	border-radius: 8px;
-	overflow: hidden;
 }
 
-.sedan-container{
-	display: flex;
-	flex-direction: column;
-	width: 33%;
-	height: 100%;
-	background-color: hsl(31, 77%, 52%);
-	color: hsla(0, 0%, 100%, 0.75);
-	padding: 5vh 5vw;
-}
-
-.sedan-container > img {
+.img{
 	width: 25%;
-	margin: 1vh 1vw;
+	margin: 0;
 }
 
-
-
-
-.sedan-container > h1{
-	font-size: 32px;
+.headline{
 	color: hsl(0, 0%, 95%);
 	font-family: 'Big Shoulders Display', cursive;
 }
 
-.sedan-container > button{
-	color: hsl(31, 77%, 52%);
+.btn{
 	background-color: white;
-	border-radius: 25px;
-	width: 75%;
-	padding: 2vh 0.5vw 2vh 0.5vw;
-	font-size: 15px;
-	margin: 5vh 0 3vh 0;
-	border: solid hsl(31, 77%, 52%);
+	border-radius: 3em;
+	width: 15em;
+	padding: 1em;
+	margin: 2em 0 1em 0;
 	cursor: pointer;
 }
 
-.sedan-container > button:hover{
+
+.sedan-container{
+	display: flex;
+	flex-direction: column;
+	width: 33.3%;
+	height: 28em;
+	background-color: hsl(31, 77%, 52%);
+	color: hsla(0, 0%, 100%, 0.75);
+	padding: 3.5em;
+}
+
+
+
+.sedan{
+	color: hsl(31, 77%, 52%);
+	border: solid hsl(31, 77%, 52%);
+}
+
+.sedan:hover{
 	background-color: hsl(31, 77%, 52%);
 	color: white;
 	border: solid white;
@@ -74,38 +83,22 @@ body{
 .suvs-container{
 	display: flex;
 	flex-direction: column;
-	width: 33%;
-	height: 100%;
+	width: 33.3%;
+	height: 28em;
 	background-color: hsl(184, 100%, 22%);
 	color: hsla(0, 0%, 100%, 0.75);
-	padding: 5vh 5vw;
+	padding: 3.5em;
 }
 
-.suvs-container > img {
-	width: 25%;
-	margin: 1vh 1vw;
-}
 
-.suvs-container > h1 {
-	font-size: 32px;
-	color: hsl(0, 0%, 95%);
-	font-family: 'Big Shoulders Display', cursive;
 
-}
 
-.suvs-container > button{
+.suvs{
 	color: hsl(184, 100%, 22%);
-	background-color: white;
-	border-radius: 25px;
-	width: 75%;
-	padding: 2vh 0.5vw 2vh 0.5vw;
-	font-size: 15px;
-	margin: 5vh 0 3vh 0;
 	border: solid hsl(184, 100%, 22%);
-	cursor: pointer;
 }
 
-.suvs-container > button:hover{
+.suvs:hover{
 	background-color: hsl(184, 100%, 22%);
 	color: white;
 	border: solid white;
@@ -117,37 +110,22 @@ body{
 .luxury-container{
 	display: flex;
 	flex-direction: column;
-	width: 33%;
-	height: 100%;
+	width: 33.3%;
+	height: 28em;
 	background-color: hsl(179, 100%, 13%);
 	color: hsla(0, 0%, 100%, 0.75);
-	padding: 5vh 5vw;
+	padding: 3.5em;
 }
 
-.luxury-container > img {
-	width: 25%;
-	margin: 1vh 1vw;
-}
 
-.luxury-container > h1{
-	font-size: 32px;
-	color: hsl(0, 0%, 95%);
-	font-family: 'Big Shoulders Display', cursive;
-}
 
-.luxury-container > button{
+
+.luxury{
 	color: hsl(179, 100%, 13%);
-	background-color: white;
-	border-radius: 25px;
-	cursor: pointer;
-	width: 75%;
-	padding: 2vh 0.5vw 2vh 0.5vw;
-	font-size: 15px;
-	margin: 5vh 0 3vh 0;
 	border: solid hsl(179, 100%, 13%);
 }
 
-.luxury-container > button:hover{
+.luxury:hover{
 	background-color: hsl(179, 100%, 13%);
 	color: white;
 	border: solid white;
@@ -156,7 +134,7 @@ body{
 
 footer{
 	display: flex;
-	margin: 5vh 0 0 0;
+
 }
 
 a{
@@ -171,7 +149,7 @@ a:hover{
 
 
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 650px){
 	.main-container{
 		display: flex;
 		flex-direction: column;
@@ -184,9 +162,9 @@ a:hover{
 		height: 33%;
 	}
 
-	.sedan-container > button{
+	.btn{
 		width: 55%;
-		padding: 2vh 0.5vw 2vh 0.5vw;
+		padding: 1.5em 0.5em;
 	}
 
 	.suvs-container{
@@ -194,20 +172,13 @@ a:hover{
 		height: 33%;
 	}
 
-	.suvs-container > button{
-		width: 55%;
-		padding: 2vh 0.5vw 2vh 0.5vw;
-	}
+
 
 	.luxury-container{
 		width: 100%;
 		height: 33%;
 	}
 
-	.luxury-container > button{
-		width: 55%;
-		padding: 2vh 0.5vw 2vh 0.5vw;
-	}
 
 	footer{
 		display: none;
